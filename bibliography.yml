@@ -1,0 +1,157 @@
+# Hayagriva format bibliography file
+# Read this https://github.com/typst/hayagriva/blob/main/docs/file-format.md
+hpc-applications:
+  type: web
+  title: "High Performance Computing (HPC) Applications and Examples"
+  date: 2023-11-16
+  url:
+    value: https://phoenixnap.com/kb/hpc-applications
+    date: 2024-11-26
+mpi41:
+  type: book
+  author:
+    - Message Passing Interface Forum
+  title: "MPI: A Message-Passing Interface Standard Version 4.1"
+  url:
+    value: "https://www.mpi-forum.org/docs/mpi-4.1/mpi41-report.pdf"
+    date: 2023-11
+mpi3:
+  type: book
+  author:
+    - Message Passing Interface Forum
+  title: "MPI: A Message-Passing Interface Standard Version 3.0"
+  date: 2012-09-21
+  publisher: "High Performance Computing Center Stuttgart (HLRS)"
+mpi2:
+  type: Book
+  author:
+    - Message Passing Interface Forum
+  title: "MPI: A Message-Passing Interface Standard, Version 2.1"
+  date: 2008-06-23
+  publisher: "High Performance Computing Center Stuttgart (HLRS)"
+quaranta-mpi:
+  type: Article
+  title: A Novel MPI+MPI Hybrid Approach Combining MPI-3 Shared Memory Windows and C11/C++11 Memory Model
+  author:
+    - Quaranta, Lionel
+    - Maddegedara, Lalith
+  date: 2021-11
+  page-range: 125-144
+  serial-number:
+    doi: 10.1016/j.jpdc.2021.06.008
+  parent:
+    type: Periodical
+    title: Journal of Parallel and Distributed Computing
+    volume: 157
+butterfly-barrier:
+  type: article
+  author:
+    - Brooks, Eugene D.
+  title: The butterfly barrier
+  date: 1986-08-01
+  page-range: 295-307
+  volume: 15
+  issue: 4
+  abstract: We describe an algorithm for barrier synchronization that requires only read and write to shared store. The algorithm is faster than the traditional locked counter approach for two processors and has an attractive log2N time scaling for larger N. The algorithm is free of hot spots and critical regions and requires a shared memory bandwidth which grows linearly with N, the number of participating processors. We verify the technique using both a real shared memory multiprocessor, for numbers of processors up to 30, and a shared memory multiprocessor simulator, for numbers of processors up to 256.
+  serial-number:
+    doi: 10.1007/BF01407877
+    issn: 1573-7640
+  parent:
+    type: Periodical
+    title: International Journal of Parallel Programming
+sync-algos:
+  type: article
+  authors:
+    - John M. Mellor-Crummey
+    - Michael L. Scott
+  title: Algorithms for Scalable Synchronization on Shared-Memory Multiprocessors
+  issue_date: Feb. 1991
+  publisher: Association for Computing Machinery
+  volume: 9
+  serial-number:
+    doi: 10.1145/103727.103729
+    issn: 0734-2071
+  abstract: Busy-wait techniques are heavily used for mutual exclusion and barrier synchronization in shared-memory parallel programs. Unfortunately, typical implementations of busy-waiting tend to produce large amounts of memory and interconnect contention, introducing performance bottlenecks that become markedly more pronounced as applications scale. We argue that this problem is not fundamental, and that one can in fact construct busy-wait synchronization algorithms that induce no memory or interconnect contention. The key to these algorithms is for every processor to spin on separate locally-accessible flag variables, and for some other processor to terminate the spin with a single remote write operation at an appropriate time. Flag variables may be locally-accessible as a result of coherent caching, or by virtue of allocation in the local portion of physically distributed shared memory. We present a new scalable algorithm for spin locks that generates O(1) remote references per lock acquisition, independent of the number of processors attempting to acquire the lock. Our algorithm provides reasonable latency in the absence of contention, requires only a constant amount of space per lock, and requires no hardware support other than a swap-with-memory instruction. We also present a new scalable barrier algorithm that generates O(1) remote references per processor reaching the barrier, and observe that two previously-known barriers can likewise be cast in a form that spins only on locally-accessible flag variables. None of these barrier algorithms requires hardware support beyond the usual atomicity of memory reads and writes. We compare the performance of our scalable algorithms with other software approaches to busy-wait synchronization on both a Sequent Symmetry and a BBN Butterfly. Our principal conclusion is that contention due to synchronization need not be a problem in large-scale shared-memory multiprocessors. The existence of scalable algorithms greatly weakens the case for costly special-purpose hardware support for synchronization, and provides a case against so-called “dance hall” architectures, in which shared memory locations are equally far from all processors.
+  page-range: 21-65
+  page-total: 45
+dissemination:
+  type: book
+  title: An Optimal Scheme for Disseminating Information
+  authors:
+    - Yijie Han
+    - Raphael A. Finkel
+  date: 1988
+  publisher: University of Kentucky, Department of Computer Science
+williams2019c:
+  type: book
+  title: C++ Concurrency in Action
+  author: Williams, A.
+  serial-number:
+    isbn: 9781638356356
+  edition: 2
+  date: 2019
+  page-range: 1-172
+  publisher: Manning
+herlihy2020art:
+  type: book
+  title: The Art of Multiprocessor Programming
+  author:
+    - Herlihy, M.
+    - Shavit, N.
+    - Luchangco, V.
+    - Spear, M.
+  edition: 2
+  serial-number:
+    isbn: "012391406X, 9780123914064"
+  date: 2020
+  publisher: Morgan Kaufman
+cpp-cyberplusIndia:
+  type: web
+  title: Technical CPP Blog
+  url:
+    value: https://www.cyberplusindia.com/blog/index.php/category/technical/cpp/
+    date: 2025-01-01
+moores-law-graph:
+  type: web
+  title: Moore's Law Transistor Count 1971-2018
+  url:
+    value: https://upload.wikimedia.org/wikipedia/commons/8/8b/Moore%27s_Law_Transistor_Count_1971-2018.png
+    date: 2025-01-01
+intermediate-mpi:
+  type: web
+  title: Introduction to MPI - MPI Send and Receive
+  url:
+    value: https://pdc-support.github.io/introduction-to-mpi/03-mpi_send_recv/index.html
+    date: 2025-01-01
+nasa-weather:
+  type: web
+  title: NASA Global Weather Forecasting
+  url:
+    value: https://www.nccs.nasa.gov/sci-tech/case-studies/nasa-global-weather-forecasting
+    date: 2025-01-01
+verbraeken-2020:
+  type: Article
+  title: A Survey on Distributed Machine Learning
+  volume: 53
+  serial-number:
+    doi: 10.1145/3377454
+    issn: 1557-7341
+  url:
+    value: http://dx.doi.org/10.1145/3377454
+  parent:
+    type: Periodical
+    title: ACM Computing Surveys
+  publisher: Association for Computing Machinery (ACM)
+hpc-cluster:
+  type: web
+  title: What is an HPC Cluster?
+  url:
+    value: https://www.hpc.iastate.edu/guides/introduction-to-hpc-clusters/what-is-an-hpc-cluster
+    date: 2025-01-01
+barrier-schools-of-thought:
+  type: web
+  title: Introduction to barrier algorithms
+  date: 2013-09-23
+  url:
+    value: https://6xq.net/barrier-intro/
+    date: 2025-01-01
