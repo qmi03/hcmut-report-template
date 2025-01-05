@@ -8,7 +8,7 @@ faculty = "Computer Science and Engineer"
 name = "Specialized Project"
 id = "CO4029"
 
-[[committee]]
+[committee]
 id = 12
 secretary = "Nguyễn Quang Hùng"
 
@@ -20,6 +20,9 @@ name = "Diệp Thanh Đăng"
 [[students]]
 name = "Phạm Võ Quang Minh"
 id = 2111762
+[[students]]
+name = "Võ Kiều My"
+id = 6969696
 
 [fonts]
 serif = "Times New Roman"
