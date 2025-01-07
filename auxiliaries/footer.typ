@@ -11,7 +11,6 @@
 
   #let semester = t.at("semester")
   #let semester-of-year = calc.rem(semester, 10)
-  // change this if you use this in the 2100s
   #let year-from = calc.round(semester / 10) + 2000
   #let year-to = year-from + 1
 
